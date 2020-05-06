@@ -48,6 +48,7 @@ class Config:
     show_pads = True
     show_fabrication = False
     show_silkscreen = True
+    show_courtyard = True
     highlight_pin1 = False
     redraw_on_drag = True
     board_rotation = 0

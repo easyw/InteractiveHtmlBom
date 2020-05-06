@@ -471,8 +471,11 @@ class PcbnewParser(EcadParser):
             "edges": edges,
             "silkscreen": self.parse_drawings_on_layers(
                     drawings, pcbnew.F_SilkS, pcbnew.B_SilkS),
+            ##courtyard
             "fabrication": self.parse_drawings_on_layers(
-                    drawings, pcbnew.F_Fab, pcbnew.B_Fab),
+                    drawings, pcbnew.F_CrtYd, pcbnew.B_CrtYd),
+            #"fabrication": self.parse_drawings_on_layers(
+            #        drawings, pcbnew.F_Fab, pcbnew.B_Fab),
             "modules": self.parse_modules(pcb_modules),
             "metadata": {
                 "title": title,
