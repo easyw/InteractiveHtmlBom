@@ -104,7 +104,8 @@ class HtmlSettingsPanelBase ( wx.Panel ):
         self.showPadsCheckbox.SetValue(True)
         b_sizer.Add( self.showPadsCheckbox, 0, wx.ALL, 5 )
 
-        self.showFabricationCheckbox = wx.CheckBox( self, wx.ID_ANY, u"Show fabrication layer", wx.DefaultPosition, wx.DefaultSize, 0 )
+        #self.showFabricationCheckbox = wx.CheckBox( self, wx.ID_ANY, u"Show fabrication layer", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.showFabricationCheckbox = wx.CheckBox( self, wx.ID_ANY, u"Show CrtYd layer", wx.DefaultPosition, wx.DefaultSize, 0 )
         b_sizer.Add( self.showFabricationCheckbox, 0, wx.ALL, 5 )
 
         self.showSilkscreenCheckbox = wx.CheckBox( self, wx.ID_ANY, u"Show silkscreen", wx.DefaultPosition, wx.DefaultSize, 0 )

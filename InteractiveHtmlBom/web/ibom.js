@@ -700,7 +700,7 @@ function populateMetadata() {
   document.getElementById("stats-smd-pads-total").innerHTML = pads_f + pads_b;
   document.getElementById("stats-th-pads").innerHTML = pads_th;
   // Update version string
-  document.getElementById("github-link").innerHTML = "InteractiveHtmlBom&nbsp;" +
+  document.getElementById("github-link").innerHTML = "iBom&nbsp;" +
     /^v\d+\.\d+/.exec(pcbdata.ibom_version)[0];
 }
 
